@@ -1,4 +1,4 @@
-package hello;
+package poe.spring.domain;
 
 public class Greeting {
 

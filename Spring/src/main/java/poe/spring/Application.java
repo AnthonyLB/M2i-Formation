@@ -1,4 +1,4 @@
-package pose.spring.main;
+package poe.spring;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
