@@ -1,0 +1,22 @@
+<taglib>
+	<tlib-version>1.0</tlib-version>
+	<jsp-version>2.0</jsp-version>
+	<short-name>custom</short-name>
+	<tag>
+		<name>discussions</name>
+		<tag-class>fr.acceis.forum.tag.DiscussionsTag</tag-class>
+		<body-content>empty</body-content>
+	</tag>
+	<tag>
+		<name>posts</name>
+		<tag-class>fr.acceis.forum.tag.PostTag</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>idFilDiscussion</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+	
+</taglib>

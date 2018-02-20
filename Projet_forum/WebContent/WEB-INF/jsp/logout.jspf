@@ -1,0 +1,11 @@
+<c:choose>
+	<c:when test="${sessionScope.isLogged eq true}">
+		<p class="breadcrumbs">connect&eacute;</p>&nbsp;<a href="/forum/logout">logout</a>
+		</p>
+	</c:when>
+	<c:otherwise>
+		<p class="breadcrumbs">
+			Non connect&eacute;&nbsp;<a href="/forum/login">login&nbsp;/</a>&nbsp;<a href="/forum/save">&nbsp;S'enregistrer</a>
+		</p>
+	</c:otherwise>
+</c:choose>
