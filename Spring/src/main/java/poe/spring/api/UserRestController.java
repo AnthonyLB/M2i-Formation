@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import poe.spring.aop.Chrono;
 import poe.spring.domain.User;
 import poe.spring.service.UserManagerService;
 
@@ -19,6 +20,7 @@ public class UserRestController{
 	UserManagerService userManagerService;
 	
 	@PostMapping("/save")
+	@Chrono //Annotation precedement cree
 	public User save(@RequestBody(required=true) User user) {
 		User savedUser = userManagerService.signup(user.getLogin(), user.getPassword());
 		System.out.println("user id: " + savedUser);

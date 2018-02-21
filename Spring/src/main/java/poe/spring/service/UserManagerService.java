@@ -35,16 +35,6 @@ public class UserManagerService {
 	public boolean isExist(String login, String pwd) {
 		
 		boolean isExist = false;
-//		System.out.println("isExit = " + isExist);
-//		Iterable<User> users = userRepository.findAll();
-//		System.out.println("loggin = " + login + ", pwd = " + pwd);
-//		for(User it: users) {
-//			System.out.println("loggin = " + it.getLogin() + ", pwd = " + it.getPassword());
-//			if( it.getLogin().compareTo(login) == 0 && it.getPassword().compareTo(pwd) == 0) {
-//				isExist = true;
-//				System.out.println("isExit = " + isExist);
-//			}
-//		}
 		if(userRepository.findByLogin(login)!=null) isExist=true;
 		return isExist;		
 	}
